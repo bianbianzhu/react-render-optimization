@@ -3,7 +3,7 @@ import * as React from "react";
 import getData from "../utils/get-data";
 
 function Grid({ columnDefs, defaultColDef, pagination }) {
-  const data = getData(10);
+  const data = getData(100); // 3
 
   return (
     <div className="ag-theme-alpine" style={{ height: "98vh" }}>

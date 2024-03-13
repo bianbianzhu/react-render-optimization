@@ -7,7 +7,7 @@ function Grid({ columnDefs, defaultColDef, pagination }) {
 
   React.useEffect(() => {
     (async () => {
-      setData(getData(100));
+      setData(getData(100)); // 3
     })();
   }, []);
 

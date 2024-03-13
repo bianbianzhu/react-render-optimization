@@ -8,6 +8,7 @@ import NameFormatter from "../components/name-formatter-optimized";
 import randomColor from "../utils/random-color";
 import Layout from "../components/layout";
 
+// 4
 const cellStyle = { background: randomColor() };
 
 function App() {

@@ -8,7 +8,6 @@ export default function Layout({ children }) {
   const prevDemoNumber = currentDemoNumber - 1;
   const nextDemoNumber = currentDemoNumber + 1;
 
-  //   create a style object to make the links look nicer, similar to material-ui
   const linkStyle = {
     textDecoration: "none",
     color: "blue",

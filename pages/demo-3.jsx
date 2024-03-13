@@ -22,7 +22,7 @@ function App() {
 
   const updateColumns = () => {
     setColumnDefs([
-      { field: "id", cellStyle: { background: randomColor() } },
+      { field: "id", cellStyle: { background: randomColor() } }, // 4
       { field: "first_name", cellRenderer: NameFormatter },
       { field: "last_name" },
       { field: "email" },
