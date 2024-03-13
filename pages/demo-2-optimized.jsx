@@ -1,6 +1,7 @@
 import { faker } from "@faker-js/faker";
 import * as React from "react";
 import randomNumber from "../utils/random-number";
+import Layout from "../components/layout";
 
 const randomArray = (size = 10) =>
   new Array(size).fill(0).map(() => ({
@@ -16,13 +17,13 @@ export default function List() {
   };
 
   return (
-    <div>
+    <Layout>
       <button onClick={changeArray}>Add an item</button>
       <ul>
         {data.map((item) => (
           <li key={item.id}>{item.value}</li>
         ))}
       </ul>
-    </div>
+    </Layout>
   );
 }

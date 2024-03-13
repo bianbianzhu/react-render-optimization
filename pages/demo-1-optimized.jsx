@@ -1,4 +1,5 @@
 import * as React from "react";
+import Layout from "../components/layout";
 
 const Counter = ({ count }) => {
   const element = <div>Counter</div>;
@@ -10,10 +11,10 @@ const Reconciliation = () => {
   const [count, setCount] = React.useState(0);
 
   return (
-    <div>
+    <Layout>
       <button onClick={() => setCount((old) => old + 1)}>Increment</button>
       <Counter count={count} />
-    </div>
+    </Layout>
   );
 };
 

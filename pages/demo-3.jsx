@@ -6,6 +6,7 @@ import Grid from "../components/grid";
 import NameFormatter from "../components/name-formatter";
 
 import randomColor from "../utils/random-color";
+import Layout from "../components/layout";
 
 function App() {
   const [columnDefs, setColumnDefs] = React.useState(() => [
@@ -40,7 +41,7 @@ function App() {
   };
 
   return (
-    <div>
+    <Layout>
       <button onClick={updateColumns} type="button">
         change columns
       </button>
@@ -50,7 +51,7 @@ function App() {
         defaultColDef={defaultColDef}
         pagination={pagination}
       />
-    </div>
+    </Layout>
   );
 }
 

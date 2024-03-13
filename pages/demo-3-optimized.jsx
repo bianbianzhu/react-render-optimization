@@ -6,6 +6,7 @@ import Grid from "../components/grid-optimized";
 import NameFormatter from "../components/name-formatter-optimized";
 
 import randomColor from "../utils/random-color";
+import Layout from "../components/layout";
 
 const cellStyle = { background: randomColor() };
 
@@ -45,7 +46,7 @@ function App() {
   );
 
   return (
-    <div>
+    <Layout>
       <button onClick={updateColumns} type="button">
         change columns
       </button>
@@ -55,7 +56,7 @@ function App() {
         defaultColDef={defaultColDef}
         pagination={pagination}
       />
-    </div>
+    </Layout>
   );
 }
 
